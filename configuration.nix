@@ -105,6 +105,7 @@ services.xserver.config = ''
   phoronix-test-suite
   lm_sensors
   memtester
+  burpsuite
   ];
 
 

@@ -32,13 +32,6 @@ services.xserver.config = ''
     BusID "PCI:25:0:0"
     Option "AllowEmptyInitialConfiguration"
   EndSection
-
-  Section "Device"
-    Identifier "nvidia1"
-    Driver "nvidia"
-    BusID "PCI:29:0:0"  # Assuming the second GPU's BusID corresponds to 29 in your description
-    Option "AllowEmptyInitialConfiguration"
-  EndSection
 '';
 
   boot.loader.systemd-boot.enable = true;
@@ -101,7 +94,17 @@ services.xserver.config = ''
   discord
   git
   vim
-  neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  zoom-us
+  neovim
+  htop
+  libgcc
+  ripgrep
+  python3
+  nerdfonts
+  tmux
+  phoronix-test-suite
+  lm_sensors
+  memtester
   ];
 
 
